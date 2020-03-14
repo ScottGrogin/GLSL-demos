@@ -9,7 +9,7 @@ float SDF(vec3 p){
 
 float marcher(vec3 ro, vec3 rd){
     
-	float totalDst = 0.;
+    float totalDst = 0.;
     for(int i =0;i<100;i++){
     	vec3 p = ro+totalDst*rd;
         float dst = SDF(p);
